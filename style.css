@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.active {
+    background-color: #ff5a00;
+    color: white;
+}
+.active2 {
+    background-color: #ff5a00;
+    color: white;
+}
+ul {
+    list-style: none;
+    display: flex;
+    border: 1px solid #ff5a00;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5%;
+}
+li {
+    border-left: 1px solid #ff5a00;
+    border-right: 1px solid #ff5a00;
+    flex: 1 0;
+    text-align: center;
+}
+li:hover {
+    color: #ff5a00;
+}
+.counter {
+    width: 70%;
+    margin: auto;
+}
+
+
+
+.container {
+    padding: 5%;
+    margin: 5%;
+}
+
+.container h2 {
+    background-color: #f6f6f6;
+    padding: 10px;
+}
+
+.container p {
+    margin-top: 5%;
+}
+
+.promotion .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promotion .head p {
+    cursor: pointer;
+    margin: 5% 0;
+    width: 50%;
+    text-align: center;
+    border-bottom: 1px solid #beb9b9; 
+}
+
+.promotion .head p:hover {
+    border-bottom: 3px solid #ff5a00;
+}
+
+
+.promotion .restaurant {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 70%;
+        padding: 5%;
+        margin: 5% auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .promotion .restaurant {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px) {
+    .promotion .restaurant {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border : 1px solid #beb9b9;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 8px rgba(0, 0, 0, 0.19);
+    z-index: 5;
+}
+ .card .card-img {
+    padding: 5% 0 2% 0;
+    max-width: 60%;
+    margin: auto;
+ }
+
+ .card .card-text {
+    background-color: #f6f6f6;
+    padding: 3%;
+ }
